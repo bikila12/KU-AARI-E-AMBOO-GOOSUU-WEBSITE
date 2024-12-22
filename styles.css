@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #ffff00;
+    padding: 0;
+    padding-bottom: 100;
+    line-height: 1.6;
+    color: #800080;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000080;
+    color: #fff;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin: 0 1rem;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero .cta {
+    display: inline-block;
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta:hover {
+    background-color: #0097a7;
+}
+
+/* About, Services, and Contact */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+
+.card {
+    background-color: #00ff00;
+    margin: 1rem;
+    padding-bottom: 30px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,255);
+    flex: 1;
+    max-width: 30%;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: #00bcd4;
+}
+
+/* Contact Form */
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form input, .contact form textarea {
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact form button {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #0097a7;
+}
+
+/* Footer */
+.footer {
+    background-color: #ffff00;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+/* General styling for the section */
+.custom-section {
+    background-color: #f9f9f9; /* Light background for readability */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the container */
+.custom-container {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+    color: #333; /* Dark text color */
+}
+
+/* Paragraph styling */
+.custom-container p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Optional: Highlight important text */
+.custom-container p strong {
+    color: #0056b3; /* Highlight color */
+}
+/* Circular Image Styling */
+.custom-image {
+    display: block;
+    width: 350px; /* Adjust size as needed */
+    height: 350px;
+    border-radius: 100%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image content fits the circle proportionally */
+    margin: 0 auto; /* Centers the image horizontally */
+    border: 2px solid #ccc; /* Optional: Adds a border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow */
+    position: relative; /* Necessary for JS animations */
+}
+/* Image slider container */
+.image-slider {
+    position: relative;
+    width: 100%;
+    max-width: 250px; /* Adjust as needed */
+    height: 300px;    /* Adjust as needed */
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Images inside the slider */
+.image-slider img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+/* Active image styling */
+.image-slider img.active {
+    left: 0;
+    opacity: 1;
+}
+/* Container for the image gallery */
+.image-gallery {
+    display: flex; /* Enable Flexbox */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: space-around; /* Space between images */
+    gap: 10px; /* Add space between images */
+    padding: 10px;
+}
+
+/* Style for the images */
+.image-gallery img {
+    width: 200px; /* Adjust width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+    transition: transform 0.3s ease; /* Optional hover effect */
+}
+
+/* Optional: Add a hover effect for better interactivity */
+.image-gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
